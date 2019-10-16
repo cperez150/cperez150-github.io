@@ -1,0 +1,49 @@
+body {
+  width: 100%;
+}
+
+.header {
+  width: 50%;
+  text-align: center;
+  margin: 0px auto;
+  border: 1px solid black;
+}
+
+.container1 {
+  width: 50%;
+  display: flex;
+  margin: 0px auto;
+  border: 1px solid black;
+}
+
+.container2 {
+  width: 50%;
+  text-align: center;
+  margin: 0px auto;
+  border: 1px solid black;
+}
+
+.container3 {
+  width: 50%;
+  text-align: center;
+  margin: 0px auto;
+  border: 1px solid black;
+}
+
+form {
+  width: 50%;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.parent1 {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  margin: 0px auto;
+  border: 1px solid black;
+}
+
+.child1 {
+  width: 50%;
+}
