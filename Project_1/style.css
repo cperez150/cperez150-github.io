@@ -23,12 +23,11 @@ body {
 .container1 {
   width: 50%;
   margin: 0px auto;
-  border: 3px solid rgb(255, 255, 255);
 }
 
 .con1Child1 {
   width: 100%;
-  color: rgb(78, 78, 78);
+  color: rgb(255, 255, 255);
   font-weight: 700;
   text-align: center;
   margin: 10px;
@@ -39,9 +38,9 @@ body {
 .container2 {
   width: 50%;
   display: flex;
-  margin: 0px auto;
+  margin: 10px auto;
   flex-direction: row;
-  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 2px 2px 8px 2px #888888;
 }
 
 .con2Child1 {
@@ -72,12 +71,16 @@ h4 {
   width: 50%;
   text-align: center;
   margin: 0px auto;
-  border: 3px solid rgb(255, 255, 255);
+
 }
 
 .portfolio {
   width: 100%;
   background: rgba(255, 255, 255, 0.753);
+  box-shadow: 2px 2px 8px 2px #888888;
+  margin: 10px auto;
+  background-color: black; 
+  color: white; 
 }
 
 th {
@@ -88,7 +91,7 @@ th {
   width: 50%;
   text-align: center;
   margin: 0px auto;
-  border: 3px solid rgb(255, 255, 255);
+
 }
 .parent1 {
   width: 50%;
@@ -96,7 +99,8 @@ th {
   flex-direction: row;
   margin: 0px auto;
   background: white;
-  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 2px 2px 8px 2px #888888;
+}
 }
 
 .child1 {
@@ -115,6 +119,7 @@ th {
   width: 50%;
   margin: 5px auto;
   text-align: center;
+  text: black; 
 }
 
 .companiesTicker {
@@ -133,7 +138,8 @@ table {
 p {
   margin: 10px;
   font-size: 14px;
-  background: rgb(0, 237, 252);
+  background: rgb(0, 0, 0);
+  color: white;
 }
 
 ul {
