@@ -46,4 +46,31 @@ form {
 
 .child1 {
   width: 50%;
+  margin: 5px auto;
+  box-sizing: border-box;
+}
+
+table {
+  text-align: center;
+  width: 50%;
+}
+
+.grandchild {
+  width: 50%;
+  margin: 0px 40px;
+}
+
+.child2 {
+  width: 50%;
+}
+
+.companiesReturned {
+  border: 1px solid black;
+}
+.companiesTicker {
+  border: 1px solid black;
+}
+
+p {
+  text-align: center;
 }
