@@ -9,16 +9,19 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="header">Pocket Portfolio</div>
+    <div class="header"><img src="images/PPLogo.png"/></div>
 
+
+<div class="rootcontainer">
     <div class="container1">
-      <div>
+      <div class="con1Child1">
         <form class="availbalance">
-          <label>Enter Available Amount</label>
+          <label>How Much Do You Have Available To Invest ?</label>
           <input
             type="text"
             placeholder="Enter Dollar Amount"
@@ -28,6 +31,20 @@
         </form>
       </div>
     </div>
+
+    <div class="container2">
+      <div class="con2Child1">
+      <div class="balance">
+        <h4>Starting Balance</h4>
+      </div>
+    </div>
+      <div class="con2Child2">
+      <div class="remainingbalance">
+          <h4>Remaining Balance</h4>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <div class="parent1">
     <div class="child1">
@@ -41,7 +58,7 @@
         />
         <button class="companyButton">Submit</button>
         </form>
-        <p>Click Tricker for <br/>Stock Information</p>
+        <p><strong><em>Click Tricker</em></strong> for Stock Information</p>
         <div class="grandchild">
         <table class="stocklookUptable">
           <th>Name</th>
@@ -49,17 +66,20 @@
         </table>
       </div>
       </div>
-      <div class="child2"> Search Results</div>
+      <div class="child2">Search Results</div>
       </div>
-  </div>
-    <div class="container2">
+      <div class="container3">
       <table class="portfolio">
         <th>Holdings</th>
         <th>Quantity</th>
         <th>Amount</th>
       </table>
     </div>
-    <div class="container3"><h3>Portfolio Balance</h3></div>
+    <div class="container4"><h3>Portfolio Balance</h3></div>
+  </div>
+</div>
+
+
     <script src="app.js"></script>
   </body>
 </html>

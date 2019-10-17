@@ -1,10 +1,25 @@
 $(() => {
+  let $userBalance = 0;
+  let $totalHoldings = 0;
+  let $stockHoldings = [];
+
   //USER INPUT BALANCE
   $(".availbalance").on("submit", event => {
-    const $availableBalance = $("#availableBalanceInput");
     event.preventDefault();
-    const $inputAmount = $availableBalance.val();
-    console.log($inputAmount);
+    //grab value from user input box
+    const $availableBalance = $("#availableBalanceInput").val();
+
+    //create div to show balance w/conversion to number
+    const $div = $("<div>").text($availableBalance);
+    $userBalance = parseInt($div.text());
+    $div.addClass("balance");
+    $(".balance").append($div);
+
+    //REMOVE INPUT BOX AFTER AMOUNT IS CAPTURED AND LOGGED
+    $("#availableBalanceInput").after(function() {
+      $(".availbalance").toggleClass("hide");
+    });
+
     $(event.currentTarget).trigger("reset");
   });
 
@@ -22,7 +37,7 @@ $(() => {
 
     const handleData = data => {
       for (let i = 0; i < data.bestMatches.length; i++) {
-        const $tableRow = $("<tr>");
+        const $tableRow = $("<tr>").css("border", "2px solid black");
         const $companiesReturned = $("<td>")
           .text(data.bestMatches[i]["2. name"])
           .addClass("companiesReturned");
@@ -49,8 +64,6 @@ $(() => {
 
   //SELECT STOCK FROM LIST OF OPTIONS (CLICK EVENT)
   $(".child1").on("click", ".companiesTicker", event => {
-    event.preventDefault();
-
     const $selectedTicker = $(event.currentTarget).text();
 
     const handleData = data => {
@@ -105,32 +118,56 @@ $(() => {
     return $getTicker;
   };
 
+  //SUBTRACT PURCHASE FROM BALANCE
+  const $remaining = () => {
+    let $currentRemaining = $userBalance - $totalHoldings;
+    const $div = $("<div>").text($currentRemaining);
+    $div.addClass("remainingbalance");
+    $(".remainingbalance").append($div);
+  };
+
+  //TOTAL HOLDINGS
+  const $portfolioBalance = () => {
+    const $div = $("<div>").text($totalHoldings);
+    $(".container4").append($div);
+  };
+
   //BUY STOCK (CLICK EVENT)
   $(".child2").on("click", ".buyButton", event => {
     const $buyTicker = $buyStock();
-
     const $portfolio = $(".portfolio");
 
     const handleData = data => {
-      const $portfolioRow = $("<tr>");
+      if ($userBalance > data["Global Quote"]["05. price"]) {
+        const $portfolioRow = $("<tr>");
+        const $companyName = $("<td>")
+          .text(data["Global Quote"]["01. symbol"])
+          .addClass("portfolioHolding");
+        $portfolioRow.append($companyName);
+        $stockHoldings.push($companyName);
 
-      const $companyName = $("<td>")
-        .text(data["Global Quote"]["01. symbol"])
-        .addClass("portfolioHolding");
-      $portfolioRow.append($companyName);
+        const $quauntity = $("<td>")
+          .text("1")
+          .addClass("portfolioHolding");
+        $portfolioRow.append($quauntity);
 
-      const $quauntity = $("<td>")
-        .text("1")
-        .addClass("portfolioHolding");
-      $portfolioRow.append($quauntity);
+        const $amount = $("<td>")
+          .text(data["Global Quote"]["05. price"])
+          .addClass("portfolioHolding");
+        $portfolioRow.append($amount);
 
-      const $amount = $("<td>")
-        .text(data["Global Quote"]["05. price"])
-        .addClass("portfolioHolding");
-      $portfolioRow.append($amount);
-
-      $portfolio.append($portfolioRow);
+        $totalHoldings += parseInt($amount.text());
+        $portfolio.append($portfolioRow);
+        $remaining();
+        $portfolioBalance();
+      } else {
+        alert("You do not have enough funds to purchse");
+      }
     };
+
+    $(".child2").empty();
+    $(".companyNameInput").trigger("reset");
+    $(".stocklookUptable td").remove();
 
     const endpoint = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${$buyTicker}&apikey=JPOQL6NWBOFGUGHF`;
 
@@ -140,7 +177,4 @@ $(() => {
       handleData(data);
     });
   });
-  //based on stock selection subtract available balance
-  //list holdings
-  //total holdings
 });

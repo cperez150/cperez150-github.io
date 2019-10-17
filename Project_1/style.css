@@ -1,76 +1,142 @@
+html {
+  height: 100%;
+}
+
 body {
   width: 100%;
+  background-size: cover;
+  background-image: url("images/background_project1_option2.png");
+  font-family: "Muli", sans-serif;
 }
 
 .header {
   width: 50%;
   text-align: center;
   margin: 0px auto;
-  border: 1px solid black;
+  background-color: transparent;
+}
+
+.rootconatiner {
+  width: 50%;
 }
 
 .container1 {
   width: 50%;
-  display: flex;
   margin: 0px auto;
-  border: 1px solid black;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.con1Child1 {
+  width: 100%;
+  color: rgb(78, 78, 78);
+  font-weight: 700;
+  text-align: center;
+  margin: 10px;
+  font-size: 18px;
+  box-sizing: border-box;
 }
 
 .container2 {
   width: 50%;
-  text-align: center;
+  display: flex;
   margin: 0px auto;
-  border: 1px solid black;
+  flex-direction: row;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.con2Child1 {
+  width: 50%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.753);
+}
+
+h4 {
+  margin: 5px 0px;
+}
+
+.balance {
+  margin: 10px 0px;
+}
+
+.remainingbalance {
+  margin: 10px 0px;
+}
+
+.con2Child2 {
+  width: 50%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.753);
 }
 
 .container3 {
   width: 50%;
   text-align: center;
   margin: 0px auto;
-  border: 1px solid black;
+  border: 3px solid rgb(255, 255, 255);
 }
 
-form {
+.portfolio {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.753);
+}
+
+th {
+  margin: 0px 50px;
+}
+
+.container4 {
   width: 50%;
   text-align: center;
   margin: 0px auto;
+  border: 3px solid rgb(255, 255, 255);
 }
-
 .parent1 {
   width: 50%;
   display: flex;
   flex-direction: row;
   margin: 0px auto;
-  border: 1px solid black;
+  background: white;
+  border: 3px solid rgb(255, 255, 255);
 }
 
 .child1 {
   width: 50%;
   margin: 5px auto;
   box-sizing: border-box;
-}
-
-table {
   text-align: center;
-  width: 50%;
 }
 
 .grandchild {
   width: 50%;
-  margin: 0px 40px;
+  margin: 0px 20px;
 }
 
 .child2 {
   width: 50%;
+  margin: 5px auto;
+  text-align: center;
 }
 
-.companiesReturned {
-  border: 1px solid black;
-}
 .companiesTicker {
-  border: 1px solid black;
+}
+.companiesTicker:hover {
+  background-color: rgb(2, 247, 255);
+}
+
+table {
+  border-collapse: collapse;
+}
+.hide {
+  visibility: hidden;
 }
 
 p {
-  text-align: center;
+  margin: 10px;
+  font-size: 14px;
+  background: rgb(0, 237, 252);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px 10px;
 }
