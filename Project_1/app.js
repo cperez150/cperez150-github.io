@@ -1,7 +1,6 @@
 $(() => {
   let $userBalance = 0;
   let $totalHoldings = 0;
-  let $stockHoldings = [];
 
   //USER INPUT BALANCE
   $(".availbalance").on("submit", event => {
@@ -10,8 +9,8 @@ $(() => {
     const $availableBalance = $("#availableBalanceInput").val();
 
     //create div to show balance w/conversion to number
-    const $div = $("<div>").text($availableBalance);
-    $userBalance = parseInt($div.text());
+    const $div = $("<div>").text(`$ ${$availableBalance}`);
+    $userBalance = parseInt($availableBalance);
     $div.addClass("balance");
     $(".balance").append($div);
 
@@ -62,6 +61,26 @@ $(() => {
     $getCompanyName();
   });
 
+  ///NEWS ON THAT STOCK
+  const $getNews = () => {
+    const endpoint =
+      "https://newsapi.org/v2/top-headlines?country=us&apiKey=b010681d8213431d9255306aa8c4d3cf";
+
+    const handleData = data => {
+      //   const $news = $("<div>").text(data.articles[0][author]);
+      //   $("child2").appened($news);
+      console.log(data);
+    };
+
+    $.ajax({
+      url: endpoint
+    }).then(data => {
+      handleData(data);
+    });
+  };
+
+  $getNews();
+
   //SELECT STOCK FROM LIST OF OPTIONS (CLICK EVENT)
   $(".child1").on("click", ".companiesTicker", event => {
     const $selectedTicker = $(event.currentTarget).text();
@@ -69,6 +88,7 @@ $(() => {
     const handleData = data => {
       const $stockInfo = $("<ul>");
 
+      console.log(data);
       const $symbol = $("<li>").text(data["Global Quote"]["01. symbol"]);
       $stockInfo.append($symbol);
 
@@ -121,15 +141,12 @@ $(() => {
   //SUBTRACT PURCHASE FROM BALANCE
   const $remaining = () => {
     let $currentRemaining = $userBalance - $totalHoldings;
-    const $div = $("<div>").text($currentRemaining);
-    $div.addClass("remainingbalance");
-    $(".remainingbalance").append($div);
+    $(".cashleft").text(`$ ${$currentRemaining}`);
   };
 
   //TOTAL HOLDINGS
   const $portfolioBalance = () => {
-    const $div = $("<div>").text($totalHoldings);
-    $(".container4").append($div);
+    $(".portfolioBlanace").text(`$ ${$totalHoldings}`);
   };
 
   //BUY STOCK (CLICK EVENT)
@@ -138,13 +155,13 @@ $(() => {
     const $portfolio = $(".portfolio");
 
     const handleData = data => {
-      if ($userBalance > data["Global Quote"]["05. price"]) {
+      console.log(data);
+      if ($userBalance > 0) {
         const $portfolioRow = $("<tr>");
         const $companyName = $("<td>")
           .text(data["Global Quote"]["01. symbol"])
           .addClass("portfolioHolding");
         $portfolioRow.append($companyName);
-        $stockHoldings.push($companyName);
 
         const $quauntity = $("<td>")
           .text("1")

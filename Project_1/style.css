@@ -2,6 +2,49 @@ html {
   height: 100%;
 }
 
+.enter {
+  background-image: url("images/background_enter.png");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.enterButton {
+  position: absolute;
+  width: 100%;
+  left: 95%;
+  top: 50%;
+  margin-left: -50%; /*half the width*/
+}
+.enterButtonStyle {
+  background: black;
+  border: 1px solid black;
+  font-family: "Inconsolata", monospace;
+  height: 40px;
+  width: 90px;
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+
+.enterButtonStyle:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  font-family: "Inconsolata", monospace;
+}
+
+a:hover {
+  color: black;
+  font-weight: 800px;
+  font-family: "Inconsolata", monospace;
+}
+
+a {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: "Inconsolata", monospace;
+  font-weight: 800px;
+}
+
 body {
   width: 100%;
   background-size: cover;
@@ -10,7 +53,7 @@ body {
 }
 
 .header {
-  width: 50%;
+  width: 40%;
   text-align: center;
   margin: 0px auto;
   background-color: transparent;
@@ -57,8 +100,8 @@ h4 {
   margin: 10px 0px;
 }
 
-.remainingbalance {
-  margin: 10px 0px;
+.cashleft {
+  margin: 2px 0px;
 }
 
 .con2Child2 {
@@ -67,11 +110,14 @@ h4 {
   background: rgba(255, 255, 255, 0.753);
 }
 
+.remainingbalance {
+  margin: 10px 0px;
+}
+
 .container3 {
   width: 50%;
   text-align: center;
   margin: 0px auto;
-
 }
 
 .portfolio {
@@ -79,20 +125,27 @@ h4 {
   background: rgba(255, 255, 255, 0.753);
   box-shadow: 2px 2px 8px 2px #888888;
   margin: 10px auto;
-  background-color: black; 
-  color: white; 
+  background-color: black;
+  color: white;
 }
 
 th {
   margin: 0px 50px;
 }
 
+h3 {
+  margin: 5px;
+}
 .container4 {
   width: 50%;
   text-align: center;
   margin: 0px auto;
-
+  background-color: white;
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+  box-shadow: 2px 2px 8px 2px #888888;
 }
+
 .parent1 {
   width: 50%;
   display: flex;
@@ -100,7 +153,6 @@ th {
   margin: 0px auto;
   background: white;
   box-shadow: 2px 2px 8px 2px #888888;
-}
 }
 
 .child1 {
@@ -119,7 +171,7 @@ th {
   width: 50%;
   margin: 5px auto;
   text-align: center;
-  text: black; 
+  text: black;
 }
 
 .companiesTicker {
@@ -145,4 +197,42 @@ p {
 ul {
   list-style-type: none;
   margin: 0px 10px;
+}
+@media screen and (max-width: 500px) {
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  body {
+    position: relative;
+  }
+  img {
+    width: 80%;
+    height: auto;
+  }
+  .header {
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+  }
+  .rootconatiner {
+    width: 50%;
+    background-color: #000000;
+  }
+
+  .container1 {
+    width: 100%;
+    background-color: #000000;
+  }
+
+  .con1Child1 {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+    box-sizing: border-box;
+  }
 }
