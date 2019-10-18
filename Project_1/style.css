@@ -59,6 +59,11 @@ body {
   background-color: transparent;
 }
 
+.tradingview-widget-container {
+  width: 50% !important;
+  margin: 10px auto;
+}
+
 .rootconatiner {
   width: 50%;
 }
@@ -169,7 +174,7 @@ h3 {
 
 .child2 {
   width: 50%;
-  margin: 5px auto;
+  margin: 50px auto;
   text-align: center;
   text: black;
 }
