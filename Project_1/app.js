@@ -61,34 +61,38 @@ $(() => {
     $getCompanyName();
   });
 
-  ///NEWS ON THAT STOCK
-  const $getNews = () => {
-    const endpoint =
-      "https://newsapi.org/v2/top-headlines?country=us&apiKey=b010681d8213431d9255306aa8c4d3cf";
+  ///Get Company Logo
+  // const $getCompanyLogo = () => {
+  //   const $val = $company;
+  //   const endpoint = `https://autocomplete.clearbit.com/v1/companies/suggest?query=:${$val}`;
 
-    const handleData = data => {
-      //   const $news = $("<div>").text(data.articles[0][author]);
-      //   $("child2").appened($news);
-      console.log(data);
-    };
+  //   const handleData = data => {
+  //     const $imageAddress = data[0].logo;
+  //     return $imageAddress;
+  //   };
 
-    $.ajax({
-      url: endpoint
-    }).then(data => {
-      handleData(data);
-    });
-  };
-
-  $getNews();
+  //   $.ajax({
+  //     url: endpoint
+  //   }).then(data => {
+  //     handleData(data);
+  //   });
+  // };
 
   //SELECT STOCK FROM LIST OF OPTIONS (CLICK EVENT)
   $(".child1").on("click", ".companiesTicker", event => {
     const $selectedTicker = $(event.currentTarget).text();
 
+    const $company = $(event.currentTarget)
+      .prev()
+      .text()
+      .split(" ")[0];
+
+    // console.log($getCompanyLogo($company));
+
+    // const $getImgsrc = $('<img src="' + $getCompanyLogo($company) + '" />')
+
     const handleData = data => {
       const $stockInfo = $("<ul>");
-
-      console.log(data);
       const $symbol = $("<li>").text(data["Global Quote"]["01. symbol"]);
       $stockInfo.append($symbol);
 
@@ -115,6 +119,27 @@ $(() => {
       const $buy = $("<button>").text("BUY");
       $buy.addClass("buyButton");
       $stockInfo.append($buy);
+
+      //GET COMPANY LOGO AND ADD TO DIV
+      const $getCompanyLogo = () => {
+        const $val = $company;
+        const endpoint = `https://autocomplete.clearbit.com/v1/companies/suggest?query=:${$val}`;
+
+        const handleData = data => {
+          const $imageAddress = data[0].logo;
+
+          const $getImgsrc = $('<img src="' + $imageAddress + '" />');
+          $(".child2").append($getImgsrc);
+        };
+
+        $.ajax({
+          url: endpoint
+        }).then(data => {
+          handleData(data);
+        });
+      };
+
+      $getCompanyLogo();
 
       $(".child2").append($stockInfo);
     };
