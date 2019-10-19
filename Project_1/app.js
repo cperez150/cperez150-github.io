@@ -184,6 +184,26 @@ $(() => {
     $(".portfolioBlanace").text(`$ ${$totalHoldings}`);
   };
 
+  // RETURN STOCK PRICE
+  const $getStockPrice = () => {
+    // let $getTickerFromPortfolio = $(event.currentTarget)
+    //   .parent()
+    //   .siblings()
+    //   .eq(0)
+    //   .text();
+    // const handleData = data => {
+    //   const $stockPrice = data["Global Quote"]["05. price"];
+    //   return $stockPrice;
+    // };
+    // handleData();
+    // const endpoint = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${$getTickerFromPortfolio}&apikey=JPOQL6NWBOFGUGHF`;
+    // $.ajax({
+    //   url: endpoint
+    // }).then(data => {
+    //   handleData(data);
+    // });
+  };
+
   //BUY STOCK (CLICK EVENT)
   $(".child2").on("click", ".buyButton", event => {
     const $buyTicker = $buyStock();
@@ -244,52 +264,62 @@ $(() => {
   //BUYMORE OF CURRENT STOCK
   $(".portfolio").on("click", ".buyMore", event => {
     console.log($buyStockUserRemaining());
-    if (
-      $buyStockUserRemaining() >=
-      parseInt(
-        $(event.currentTarget)
-          .parent()
-          .siblings()
-          .eq(2)
-          .text()
-      )
-    ) {
-      let $current = parseInt(
+
+    let $getTickerFromPortfolio = $(event.currentTarget)
+      .parent()
+      .siblings()
+      .eq(0)
+      .text();
+
+    const handleData = data => {
+      const $stockPrice = data["Global Quote"]["05. price"];
+      console.log($stockPrice);
+
+      if ($buyStockUserRemaining() >= $stockPrice) {
+        let $currentQuantity = parseInt(
+          $(event.currentTarget)
+            .parent()
+            .siblings()
+            .eq(1)
+            .text()
+        );
+
+        $currentQuantity++;
+
         $(event.currentTarget)
           .parent()
           .siblings()
           .eq(1)
-          .text()
-      );
+          .text($currentQuantity);
 
-      $current++;
-
-      $(event.currentTarget)
-        .parent()
-        .siblings()
-        .eq(1)
-        .text($current);
-
-      let $currentAmount = parseInt(
+        let $currentAmount = parseInt(
+          $(event.currentTarget)
+            .parent()
+            .siblings()
+            .eq(2)
+            .text()
+        );
         $(event.currentTarget)
           .parent()
           .siblings()
           .eq(2)
-          .text()
-      );
+          .text($currentAmount + parseInt($stockPrice));
 
-      $totalHoldings += $currentAmount;
-      $portfolioBalance();
+        $totalHoldings += parseInt($stockPrice);
+      } else {
+        alert("Insufficent Funds");
+      }
       $remaining();
+      $portfolioBalance();
+    };
 
-      $(event.currentTarget)
-        .parent()
-        .siblings()
-        .eq(2)
-        .text("$ " + $currentAmount * $current + ".00");
-    } else {
-      alert("insufficent balance");
-    }
+    const endpoint = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${$getTickerFromPortfolio}&apikey=JPOQL6NWBOFGUGHF`;
+
+    $.ajax({
+      url: endpoint
+    }).then(data => {
+      handleData(data);
+    });
   });
   //sellstock
 });
