@@ -16,14 +16,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Pocket Portfolio</title>
   </head>
   <body>
     <div class="header"><img src="images/PPLogo.png" /></div>
-
-
-
-
+    <nav>
+      <ul class="navigation">
+      <li class="liNav"><a class="navigationlink" href="#">Market News</a></li>
+      <li class="liNav"><a class="navigationlink" href="#">Holdings</a></li>
+      <li class="liNav"s><a class="navigationlink" href="#">Portfolio Holdings</a></li>
+    </ul>
+    </nav>
         <div class="rootcontainer">
             <div class="container1">
               <div class="con1Child1">
@@ -34,7 +37,7 @@
                     placeholder="Enter Dollar Amount"
                     id="availableBalanceInput"
                   />
-                  <button class="availBalButton">Submit</button>
+                  <button class="availBalButton">$</button>
                 </form>
               </div>
             </div>
@@ -52,43 +55,52 @@
                 </div>
               </div>
             </div>
-          </div>
+         
 
                             <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
     <div class="tradingview-widget-container__widget"></div>
     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
     {
-    "symbols": [
-      {
-        "title": "S&P 500",
-        "proName": "OANDA:SPX500USD"
-      },
-      {
-        "title": "Nasdaq 100",
-        "proName": "OANDA:NAS100USD"
-      }
-    ],
-    "colorTheme": "light",
-    "isTransparent": false,
-    "displayMode": "adaptive",
-    "locale": "en"
-  }
+  "symbols": [
+    {
+      "title": "S&P 500",
+      "proName": "OANDA:SPX500USD"
+    },
+    {
+      "title": "Nasdaq 100",
+      "proName": "OANDA:NAS100USD"
+    },
+    {
+      "description": "EUR/USD",
+      "proName": "FX:EURUSD"
+    },
+    {
+      "description": "VANGUARD",
+      "proName": "AMEX:VTI"
+    }
+  ],
+  "colorTheme": "light",
+  "isTransparent": false,
+  "locale": "en"
+}
     </script>
   </div>
-
-            <div class="parent1">
+           <div class="searchform">
+                <form class="companyNameInput">
+                    <label>Search Stock</label>
+                    <input
+                      type="text"
+                      id="companyGrab"
+                      placeholder="Enter Company Name"
+                      class=""
+                    />
+                    <button class="companyButton">Submit</button>
+                    </form>
+                  </div>
+             <div class="parent1">
             <div class="child1">
-              <form class="companyNameInput">
-                <label>Search Stock</label>
-                <input
-                  type="text"
-                  id="companyGrab"
-                  placeholder="Enter Company Name"
-                  class=""
-                />
-                <button class="companyButton">Submit</button>
-                </form>
+            
                 <p><strong><em>Click Tricker</em></strong> for Stock Information</p>
                 <div class="grandchild">
                 <table class="stocklookUptable">

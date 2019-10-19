@@ -36,7 +36,10 @@ $(() => {
 
     const handleData = data => {
       for (let i = 0; i < data.bestMatches.length; i++) {
-        const $tableRow = $("<tr>").css("border", "2px solid black");
+        const $tableRow = $("<tr>").css({
+          border: "1px solid black",
+          "border-radius": "5px"
+        });
         const $companiesReturned = $("<td>")
           .text(data.bestMatches[i]["2. name"])
           .addClass("companiesReturned");
