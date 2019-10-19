@@ -1,6 +1,23 @@
 $(() => {
+  ///Get Company Logo
+  // const $getCompanyLogo = () => {
+  //   const $val = $company;
+  //   const endpoint = `https://autocomplete.clearbit.com/v1/companies/suggest?query=:${$val}`;
+
+  //   const handleData = data => {
+  //     const $imageAddress = data[0].logo;
+  //     return $imageAddress;
+  //   };
+
+  //   $.ajax({
+  //     url: endpoint
+  //   }).then(data => {
+  //     handleData(data);
+  //   });
+  // };
   let $userBalance = 0;
   let $totalHoldings = 0;
+  let $portfolioHoldings = [];
 
   //USER INPUT BALANCE
   $(".availbalance").on("submit", event => {
@@ -64,23 +81,6 @@ $(() => {
     $getCompanyName();
   });
 
-  ///Get Company Logo
-  // const $getCompanyLogo = () => {
-  //   const $val = $company;
-  //   const endpoint = `https://autocomplete.clearbit.com/v1/companies/suggest?query=:${$val}`;
-
-  //   const handleData = data => {
-  //     const $imageAddress = data[0].logo;
-  //     return $imageAddress;
-  //   };
-
-  //   $.ajax({
-  //     url: endpoint
-  //   }).then(data => {
-  //     handleData(data);
-  //   });
-  // };
-
   //SELECT STOCK FROM LIST OF OPTIONS (CLICK EVENT)
   $(".child1").on("click", ".companiesTicker", event => {
     const $selectedTicker = $(event.currentTarget).text();
@@ -95,7 +95,7 @@ $(() => {
     // const $getImgsrc = $('<img src="' + $getCompanyLogo($company) + '" />')
 
     const handleData = data => {
-      const $stockInfo = $("<ul>");
+      const $stockInfo = $("<ul>").addClass("stockInfolist");
       const $symbol = $("<li>").text(data["Global Quote"]["01. symbol"]);
       $stockInfo.append($symbol);
 
@@ -170,6 +170,13 @@ $(() => {
   const $remaining = () => {
     let $currentRemaining = $userBalance - $totalHoldings;
     $(".cashleft").text(`$ ${$currentRemaining}`);
+    return $currentRemaining;
+  };
+
+  //NONVISIBLE REMAINING BALANCE COUNT W/RETURN STATEMENT TO GRAB VALUE
+  const $buyStockUserRemaining = () => {
+    let $currentRemaining = $userBalance - $totalHoldings;
+    return $currentRemaining;
   };
 
   //TOTAL HOLDINGS
@@ -183,23 +190,34 @@ $(() => {
     const $portfolio = $(".portfolio");
 
     const handleData = data => {
-      console.log(data);
-      if ($userBalance > 0) {
+      if ($buyStockUserRemaining() >= data["Global Quote"]["05. price"]) {
         const $portfolioRow = $("<tr>");
         const $companyName = $("<td>")
           .text(data["Global Quote"]["01. symbol"])
-          .addClass("portfolioHolding");
+          .addClass("portfolioHolding name");
+        $portfolioHoldings.push($companyName);
         $portfolioRow.append($companyName);
 
         const $quauntity = $("<td>")
-          .text("1")
-          .addClass("portfolioHolding");
+          .text(1)
+          .addClass("portfolioHolding quantity");
         $portfolioRow.append($quauntity);
 
         const $amount = $("<td>")
           .text(data["Global Quote"]["05. price"])
-          .addClass("portfolioHolding");
+          .addClass("portfolioHolding amount");
         $portfolioRow.append($amount);
+
+        const $sell = $("<td>").addClass("portfolioHolding");
+        const $sellbtn = $("<button>")
+          .text("Sell")
+          .addClass("sell");
+        const $buyMorebtn = $("<button>")
+          .text("Buy")
+          .addClass("buyMore");
+        $sell.append($sellbtn);
+        $sell.append($buyMorebtn);
+        $portfolioRow.append($sell);
 
         $totalHoldings += parseInt($amount.text());
         $portfolio.append($portfolioRow);
@@ -222,4 +240,56 @@ $(() => {
       handleData(data);
     });
   });
+
+  //BUYMORE OF CURRENT STOCK
+  $(".portfolio").on("click", ".buyMore", event => {
+    console.log($buyStockUserRemaining());
+    if (
+      $buyStockUserRemaining() >=
+      parseInt(
+        $(event.currentTarget)
+          .parent()
+          .siblings()
+          .eq(2)
+          .text()
+      )
+    ) {
+      let $current = parseInt(
+        $(event.currentTarget)
+          .parent()
+          .siblings()
+          .eq(1)
+          .text()
+      );
+
+      $current++;
+
+      $(event.currentTarget)
+        .parent()
+        .siblings()
+        .eq(1)
+        .text($current);
+
+      let $currentAmount = parseInt(
+        $(event.currentTarget)
+          .parent()
+          .siblings()
+          .eq(2)
+          .text()
+      );
+
+      $totalHoldings += $currentAmount;
+      $portfolioBalance();
+      $remaining();
+
+      $(event.currentTarget)
+        .parent()
+        .siblings()
+        .eq(2)
+        .text("$ " + $currentAmount * $current + ".00");
+    } else {
+      alert("insufficent balance");
+    }
+  });
+  //sellstock
 });

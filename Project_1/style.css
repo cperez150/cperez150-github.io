@@ -99,11 +99,16 @@ li a {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #fff;
+  font-family: "Muli", sans-serif;
 }
 
 /* .rootconatiner {
   width: 50%;
 } */
+
+ul.stockInfolist {
+  padding: 0px;
+}
 
 .container1 {
   width: 50%;
@@ -204,13 +209,6 @@ h3 {
   font-weight: 700;
 }
 
-.availBalButton:hover {
-  background: black;
-  color: white;
-  font-weight: 700;
-  border: 1px solid black;
-}
-
 .parent1 {
   width: 50%;
   display: flex;
@@ -252,6 +250,10 @@ h3 {
   text-align: center;
 }
 
+.stockInfolist {
+  margin: 20px auto 0px auto;
+}
+
 .grandchild {
   width: 95%;
   margin: 0px auto;
@@ -284,12 +286,16 @@ p {
   font-size: 14px;
   background: rgb(0, 0, 0);
   color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px 2px #888888;
 }
 
 ul {
   list-style-type: none;
   margin: 0px 10px;
 }
+
+/*MEDIA */
 @media screen and (max-width: 500px) {
   html,
   body {
