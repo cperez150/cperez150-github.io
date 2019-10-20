@@ -19,11 +19,12 @@
     <title>Pocket Portfolio</title>
   </head>
   <body>
-    <div class="header"><img src="images/PPLogo.png" /></div>
+    <header><img src="images/PPLogo.png" /></header>
+    <h5>ON THE GO INVESTING FOR PEOPLE ON THE GO</h5>
     <nav>
       <ul class="navigation">
-      <li class="liNav"><a class="navigationlink" href="#">Market News</a></li>
-      <li class="liNav"><a class="navigationlink" href="#">Holdings</a></li>
+      <li class="liNav"><a class="navigationlink" href="">Market News</a></li>
+      <li class="liNav"><a class="navigationlink" href="#port1">Holdings</a></li>
       <li class="liNav"s><a class="navigationlink" href="#">Portfolio Holdings</a></li>
     </ul>
     </nav>
@@ -37,7 +38,7 @@
                     placeholder="Enter Dollar Amount"
                     id="availableBalanceInput"
                   />
-                  <button class="availBalButton">$</button>
+                  <button class="availBalButton">Submit</button>
                 </form>
               </div>
             </div>
@@ -112,7 +113,7 @@
               <div class="child2"><strong>Search Result(s)</strong></div>
               </div>
               <div class="container3">
-              <table class="portfolio">
+              <table id="port1"class="portfolio">
                 <th>Holdings</th>
                 <th>Quantity</th>
                 <th>Amount</th>
@@ -125,6 +126,33 @@
             </div>
           </div>
         </div>
+        <footer class="parentfooter">
+          <div class="pocketCompanyInfo">
+
+            <ul>
+              <li><strong>About</strong></li>
+              <li>Company Info</li>
+              <li>Press</li>
+              <li>Careers @ Pocket Portfolio</li>
+            </ul>
+          </div>
+          <div class="pocketCompanyResources">
+              <ul>
+                <li><strong>Resources</strong></li>
+                <li>FAQs</li>
+                <li>Blog</li>
+                <li>Brokerage Info</li>
+              </ul>
+            </div>
+            <div class="pocketCompanyLegal">
+                <ul>
+                  <li><strong>Legal</strong></li>
+                  <li>Terms of Service</li>
+                  <li>Privacy Policy</li>
+                  <li>Notice</li>
+                </ul>
+              </div>
+        </footer>
             <script src="app.js">
     </script>
   </body>
