@@ -550,6 +550,7 @@ ul {
   }
 
   body {
+    position: relative;
     width: 100%;
     background: linear-gradient(black, rgb(46, 46, 46)) !important;
   }
@@ -656,11 +657,24 @@ ul {
     font-weight: 700;
     background: linear-gradient(black, grey);
   }
+
+  #companyGrab {
+    border-radius: 5px;
+    width: 100px;
+    margin: 0px auto 5px auto;
+    height: 20px;
+  }
+  .companyButton {
+    height: 25px;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: white;
+  }
   .parent1 {
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin: -10px auto;
+    margin: 10px auto;
     background: white;
     box-shadow: 2px 2px 8px 2px #888888;
   }
@@ -727,18 +741,29 @@ ul {
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin: 90px auto;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255);
   }
 
   .pocketCompanyResources,
   .pocketCompanyInfo,
   .pocketCompanyLegal {
     width: 50%;
-    margin: 0px auto 5px auto;
+    margin: 0px 0px 5px -20px;
     color: rgba(0, 0, 0, 0.7);
     justify-content: space-around;
     text-align: center;
     font-size: 14px;
+  }
+  .availBalButton {
+    background: white;
+  }
+
+  p {
+    height: 40px;
+    width: 150px;
+    color: black;
+    background-color: white;
   }
 }
