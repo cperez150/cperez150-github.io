@@ -16,6 +16,7 @@
 <li>jQuery</li>
 <li>HTML</li>
 <li>CSS</li>
+ <li>Photoshop</li>
 </ul>
   
 <h3>User Story</h3>
@@ -35,10 +36,9 @@
 - News Search Function: <strong>Source:</strong> News API, <strong>Link:</strong> https://newsapi.org/<br/>
 - Stock Ticker Widget: <strong>Source:</strong>Trading View, <strong>Link:</strong> https://www.tradingview.com/widget/<br/>
 - Live Stock Market Feed: <strong>Source:</strong>Trading View, <strong>Link:</strong> https://www.tradingview.com/widget/<br/>
-- General CSS Styling Information: <strong>Source:</strong>W3Schools,<strong>Link:</strong>https://www.w3schools.com/css/ <br/>
-
-
-
+- General CSS Styling Information: <strong>Source:</strong>W3Schools, <strong>Link:</strong>https://www.w3schools.com/css/ <br/>
+- Company Information and Stock Pricing: <strong>Source:</strong>Alpha Vantage API, <strong>Link:</strong> https://www.alphavantage.co/documentation/
+-Company Logos: <strong>Source:</strong> Clearbit, <strong>Link:</strong>https://clearbit.com/logo
 
 <h3>Images</h3>
 <img src="https://github.com/cperez150/pocketportfolio/blob/master/Project_1/ScreenShots/All%20Devices.png"></img>
