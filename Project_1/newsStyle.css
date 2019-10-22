@@ -16,6 +16,12 @@ header {
   background-color: transparent;
 }
 
+.tradingview-widget-container {
+  width: 70% !important;
+  margin: 10px auto 0px auto;
+  box-shadow: 2px 2px 8px 2px #888888;
+}
+
 h5 {
   color: black;
   text-align: center;
@@ -123,6 +129,7 @@ button {
 
 a:link {
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 .parentfooter ul {
@@ -135,7 +142,7 @@ a:link {
   flex-direction: row;
   justify-content: center;
   margin: 90px auto;
-  background: linear-gradient(grey, black);
+  background: rgba(116, 116, 116, 0.5);
   font-family: "Roboto", sans-serif;
 }
 
@@ -301,6 +308,7 @@ p {
 
   a:link {
     text-decoration: none;
+    font-family: "Roboto", sans-serif;
   }
 
   .parentfooter ul {
@@ -490,6 +498,7 @@ p {
 
   a:link {
     text-decoration: none;
+    font-family: "Roboto", sans-serif;
   }
 
   .parentfooter ul {
@@ -502,7 +511,7 @@ p {
     flex-direction: row;
     justify-content: center;
     margin: 90px auto;
-    background: linear-gradient(grey, black);
+    background: rgba(116, 116, 116, 0.5);
     font-family: "Roboto", sans-serif;
   }
 
@@ -668,6 +677,7 @@ p {
 
   a:link {
     text-decoration: none;
+    font-family: "Roboto", sans-serif;
   }
 
   .parentfooter ul {
@@ -680,7 +690,7 @@ p {
     flex-direction: row;
     justify-content: center;
     margin: 90px auto;
-    background: linear-gradient(grey, black);
+    background: rgba(116, 116, 116, 0.5);
     font-family: "Roboto", sans-serif;
   }
 

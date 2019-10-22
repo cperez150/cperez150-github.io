@@ -65,10 +65,13 @@ $(() => {
     }).then(data => {
       handleData(data);
     });
-    $(event.currentTarget).trigger("reset");
+
     $(".companyNameInput").on("change", "input", function() {
-      $(".stocklookUptable").empty();
+      const $tbody = $("tbody");
+
+      $tbody.empty();
     });
+    $(event.currentTarget).trigger("reset");
   };
 
   //FIND STOCK/COMPANY NAME (CLICK EVENT)
@@ -192,6 +195,7 @@ $(() => {
 
   //BUY STOCK (CLICK EVENT)
   $(".child2").on("click", ".buyButton", event => {
+    $(".stocklookUptable").empty();
     const $buyTicker = $buyStock();
     const $portfolio = $(".portfolio");
 
