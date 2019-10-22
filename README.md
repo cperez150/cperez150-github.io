@@ -1,4 +1,4 @@
-<img src="https://github.com/cperez150/pocketportfolio/blob/master/Project_1/images/pplogo_BLACK.png"/>
+<img src="https://github.com/cperez150/pocketportfolio/blob/master/Project_1/images/pplogo_BLACK.png"/></img>
 
 <h1> Project Overview</h1>
 * Technologies Used..
@@ -7,12 +7,12 @@
 * Sources Used..
 * Images..
 
-<h2>Technologies Used</h2>
+<h3>Technologies Used</h3>
   
-<h2>User Story</h2>
+<h3>User Story</h3>
 
-<h2>Site Link</h2>
+<h3>Site Link</h3>
 
-<h2>Sources Used</h2>
+<h3>Sources Used</h3>
 
-<h2>Images</h2>
+<h3>Images</h3>
