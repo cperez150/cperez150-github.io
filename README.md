@@ -1,6 +1,7 @@
 <img src="https://github.com/cperez150/pocketportfolio/blob/master/Project_1/images/pplogo_BLACK.png"/></img>
 
 <h1> Project Overview</h1>
+<p>Investment app for users 13+ to buy and sell stocks, research market news, and keep up to date with gloabl movements in the market.</p>
 <ul>
  <li>Technologies Used</li>
 <li>User Story</li>
@@ -31,7 +32,7 @@
 <a href="https://flamboyant-bardeen-534681.netlify.com"> Pocket Porfolio Link </a>
 
 <h3>Sources Used</h3>
-1.) <strong>Source:</strong> News API, <strong>Link:</strong> https://newsapi.org/
+- <strong>Source:</strong> News API, <strong>Link:</strong> https://newsapi.org/
 
 
 
