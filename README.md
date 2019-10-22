@@ -33,12 +33,12 @@
 <a href="https://flamboyant-bardeen-534681.netlify.com"> Pocket Porfolio Link </a>
 
 <h3>Sources Used</h3>
-- <u>News Search Function:</u> <strong>Source:</strong> News API, <strong>Link:</strong> https://newsapi.org/<br/>
-- <u>Stock Ticker Widget:</u> <strong>Source:</strong>Trading View, <strong>Link:</strong> https://www.tradingview.com/widget/<br/>
-- <u>Live Stock Market Feed:</u> <strong>Source:</strong>Trading View, <strong>Link:</strong> https://www.tradingview.com/widget/<br/>
+- <u>News Search Function:</u> <strong>Source:</strong> News API, <strong>Link: </strong> https://newsapi.org/<br/>
+- <u>Stock Ticker Widget:</u> <strong>Source:</strong>Trading View, <strong>Link: </strong> https://www.tradingview.com/widget/<br/>
+- <u>Live Stock Market Feed:</u> <strong>Source:</strong>Trading View, <strong>Link: </strong> https://www.tradingview.com/widget/<br/>
 - <u>General CSS Styling Information:</u> <strong>Source:</strong>W3Schools, <strong>Link:</strong>https://www.w3schools.com/css/ <br/>
--<u> Company Information and Stock Pricing:</u> <strong>Source:</strong>Alpha Vantage API, <strong>Link:</strong> https://www.alphavantage.co/documentation/ <br/>
--<u>Company Logos:</u> <strong>Source:</strong> Clearbit, <strong>Link:</strong>https://clearbit.com/logo
+-<u> Company Information and Stock Pricing:</u> <strong>Source:</strong>Alpha Vantage API, <strong>Link: </strong> https://www.alphavantage.co/documentation/ <br/>
+-<u>Company Logos:</u> <strong>Source:</strong> Clearbit, <strong>Link: </strong>https://clearbit.com/logo
 
 <h3>Images</h3>
 <img src="https://github.com/cperez150/pocketportfolio/blob/master/Project_1/ScreenShots/All%20Devices.png"></img>
