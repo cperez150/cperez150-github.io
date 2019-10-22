@@ -1,11 +1,13 @@
 <img src="https://github.com/cperez150/pocketportfolio/blob/master/Project_1/images/pplogo_BLACK.png"/></img>
 
 <h1> Project Overview</h1>
-* Technologies Used..
-* User Story..
-* Site Link..
-* Sources Used..
-* Images..
+<ul>
+  <li>Technologies Used</li>
+<li>User Story</li>
+<li>Site Link</li>
+<li>Sources Used</li>
+<li>Images</li>
+</ul>
 
 <h3>Technologies Used</h3>
   
