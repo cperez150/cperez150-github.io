@@ -2,7 +2,7 @@
 
 <h1> Project Overview</h1>
 <ul>
-  <li>Technologies Used</li>
+ <li>Technologies Used</li>
 <li>User Story</li>
 <li>Site Link</li>
 <li>Sources Used</li>
@@ -10,6 +10,13 @@
 </ul>
 
 <h3>Technologies Used</h3>
+<ul>
+ <li>Javascript</li>
+<li>jQuery</li>
+<li>HTML</li>
+<li>CSS</li>
+</ul>
+
   
 <h3>User Story</h3>
 
