@@ -32,7 +32,8 @@
 <a href="https://flamboyant-bardeen-534681.netlify.com"> Pocket Porfolio Link </a>
 
 <h3>Sources Used</h3>
-- <strong>Source:</strong> News API, <strong>Link:</strong> https://newsapi.org/
+- News Search Function<br/>
+<strong>Source:</strong> News API, <strong>Link:</strong> https://newsapi.org/
 
 
 
