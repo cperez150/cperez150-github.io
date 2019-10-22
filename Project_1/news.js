@@ -45,4 +45,10 @@ $(() => {
       $(".returnedNews").empty();
     });
   });
+
+  const $pageNavTop = $("<a>")
+    .attr("href", "#top")
+    .text(`Back to Top`)
+    .css({ margin: "0px auto", display: "block", width: "100px" });
+  $(".topDiv").append($pageNavTop);
 });

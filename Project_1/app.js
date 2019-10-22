@@ -39,18 +39,24 @@ $(() => {
 
     const handleData = data => {
       for (let i = 0; i < data.bestMatches.length; i++) {
-        const $tableRow = $("<tr>").css({
-          border: "1px solid black",
-          "border-radius": "5px"
-        });
+        const $tableRow = $("<tr>");
         const $companiesReturned = $("<td>")
           .text(data.bestMatches[i]["2. name"])
           .addClass("companiesReturned");
         $tableRow.append($companiesReturned);
-        const $companiesTicker = $("<td>")
+        // const $companiesTicker = $("<td>");
+        const $viewBtn = $("<button>")
           .text(data.bestMatches[i]["1. symbol"])
-          .addClass("companiesTicker");
-        $tableRow.append($companiesTicker);
+          .addClass("companiesTicker")
+          .css({
+            background: "black",
+            color: "white",
+            "border-radius": "10px",
+            "box-shadow": "2px 2px 8px 2px #888888"
+          });
+
+        // $companiesTicker.append($viewBtn);
+        $tableRow.append($viewBtn);
         $(".stocklookUptable").append($tableRow);
       }
     };
@@ -80,6 +86,7 @@ $(() => {
       .text()
       .split(" ")[0];
 
+    console.log($company);
     // console.log($getCompanyLogo($company));
 
     // const $getImgsrc = $('<img src="' + $getCompanyLogo($company) + '" />')
