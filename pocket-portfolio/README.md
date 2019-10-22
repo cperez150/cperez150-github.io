@@ -1,4 +1,4 @@
-<img src="https://github.com/cperez150/cperez150.github.io/blob/master/Pocket-PortFolio/images/pplogo_BLACK.png"/></img>
+<img src="https://github.com/cperez150/cperez150.github.io/blob/master/pocket-portfolio/images/pplogo_BLACK.png"/></img>
 
 <h1> Project Overview</h1>
 <p>Investment app for users (age 13+) to buy and sell stocks, research market news, and keep up to date with gloabl movements in the market.</p>
@@ -41,5 +41,5 @@
 -<u>Company Logos:</u> <strong>Source:</strong> Clearbit, <strong>Link: </strong>https://clearbit.com/logo
 
 <h3>Images</h3>
-<img src="https://github.com/cperez150/pocketportfolio/blob/master/Project_1/ScreenShots/All%20Devices.png"></img>
-<img src ="https://github.com/cperez150/pocketportfolio/blob/master/Project_1/ScreenShots/Google%20Pixel.png"></img>
+<img src="https://github.com/cperez150/cperez150.github.io/blob/master/pocket-portfolio/screenshots/All%20Devices.png"></img>
+<img src ="https://github.com/cperez150/cperez150.github.io/blob/master/pocket-portfolio/screenshots/iPhoneX%20-%20Pocket%20Portfolio.png"></img>
