@@ -67,9 +67,8 @@ $(() => {
     });
 
     $(".companyNameInput").on("change", "input", function() {
-      const $tbody = $("tbody");
-
-      $tbody.empty();
+      $(".stocklookUptable").empty();
+      $(".companiesTicker").empty();
     });
     $(event.currentTarget).trigger("reset");
   };
@@ -175,13 +174,6 @@ $(() => {
     return $currentRemaining;
   };
 
-  // //ADD SELL TO BALANCE
-  // const $sellBack = () => {
-  //   let $currentRemaining = $userBalance - $totalHoldings;
-  //   $(".cashleft").text(`$ ${$currentRemaining}`);
-  //   return $currentRemaining;
-  // };
-
   //NONVISIBLE REMAINING BALANCE COUNT W/RETURN STATEMENT TO GRAB VALUE
   const $buyStockUserRemaining = () => {
     let $currentRemaining = $userBalance - $totalHoldings;
@@ -195,7 +187,6 @@ $(() => {
 
   //BUY STOCK (CLICK EVENT)
   $(".child2").on("click", ".buyButton", event => {
-    $(".stocklookUptable").empty();
     const $buyTicker = $buyStock();
     const $portfolio = $(".portfolio");
 
@@ -240,7 +231,7 @@ $(() => {
 
     $(".child2").empty();
     $(".companyNameInput").trigger("reset");
-    $(".stocklookUptable td").remove();
+    $(".stocklookUptable tr").remove();
 
     const endpoint = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${$buyTicker}&apikey=JPOQL6NWBOFGUGHF`;
 

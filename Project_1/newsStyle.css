@@ -80,6 +80,7 @@ li a:hover {
   height: 40px;
   border: 1px solid grey;
   cursor: pointer;
+  outline: none;
 }
 
 button {
@@ -91,6 +92,8 @@ button {
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
+  outline: none;
+  border-radius: 10px;
 }
 
 .companyNews {
