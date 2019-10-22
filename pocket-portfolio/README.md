@@ -4,13 +4,13 @@
 <p>Investment app for users (age 13+) to buy and sell stocks, research market news, and keep up to date with gloabl movements in the market.</p>
 
 <h2>User Guide</h2>
-1.) Investor input's how much money ($0.00) the investor will have to invest. 
-2.) Click submit or press "return" on keyboard.
-3.) The investor can then search for various companies by entering a name in the search bar and clicking submit or pressing "return" on the keyboard.
-4.) The closest selection of companies will appear based on the investor's input below the search bar. 
-6.) The investor can then select the company of their choice by clicking on the company's TICKER.
-7.) If the investor would like to buy the stock, the investor can click "buy" under the stock price. 
-8.) The stock will be added to the investor's portfolio, money will be deducted from the available balance, and a remaining balance will appear. 
+1.) Investor input's how much money ($0.00) the investor will have to invest.<br/>
+2.) Click submit or press "return" on keyboard.<br/>
+3.) The investor can then search for various companies by entering a name in the search bar and clicking submit or pressing "return" on the keyboard.<br/>
+4.) The closest selection of companies will appear based on the investor's input below the search bar.<br/>
+6.) The investor can then select the company of their choice by clicking on the company's TICKER.<br/>
+7.) If the investor would like to buy the stock, the investor can click "buy" under the stock price. <br/>
+8.) The stock will be added to the investor's portfolio, money will be deducted from the available balance, and a remaining balance will appear.<br/>
 
 
 <ul>
