@@ -58,7 +58,7 @@ a {
 body {
   width: 100%;
   background-size: cover;
-  background-image: url ("./images/background_project1_option2.png");
+  background-image: url ("../images/background_project1_option2.png");
   font-family: "Muli", sans-serif;
 }
 
