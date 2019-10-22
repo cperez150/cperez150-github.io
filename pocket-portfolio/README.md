@@ -1,7 +1,18 @@
 <img src="https://github.com/cperez150/cperez150.github.io/blob/master/pocket-portfolio/images/pplogo_BLACK.png"/></img>
 
-<h1> Project Overview</h1>
+<h2> Pocket Portfolio Overview</h2>
 <p>Investment app for users (age 13+) to buy and sell stocks, research market news, and keep up to date with gloabl movements in the market.</p>
+
+<h2>User Guide</h2>
+1.) Investor input's how much money ($0.00) the investor will have to invest. 
+2.) Click submit or press "return" on keyboard.
+3.) The investor can then search for various companies by entering a name in the search bar and clicking submit or pressing "return" on the keyboard.
+4.) The closest selection of companies will appear based on the investor's input below the search bar. 
+6.) The investor can then select the company of their choice by clicking on the company's TICKER.
+7.) If the investor would like to buy the stock, the investor can click "buy" under the stock price. 
+8.) The stock will be added to the investor's portfolio, money will be deducted from the available balance, and a remaining balance will appear. 
+
+
 <ul>
  <li>Technologies Used</li>
 <li>User Story</li>
@@ -31,6 +42,8 @@
 
 <h3>Site Link</h3>
 <a href="https://flamboyant-bardeen-534681.netlify.com"> Pocket Porfolio Link </a>
+
+<h3>APIs</h3>
 
 <h3>Sources Used</h3>
 - <u>News Search Function:</u> <strong>Source:</strong> News API, <strong>Link: </strong> https://newsapi.org/<br/>
