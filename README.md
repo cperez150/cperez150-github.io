@@ -1,6 +1,6 @@
 # Pocket Portfolio
 
-[logo]: https://github.com/cperez150/pocketportfolio/blob/master/Project_1/images/pplogo_BLACK.png "Logo Title Text 2
+<img src="https://github.com/cperez150/pocketportfolio/blob/master/Project_1/images/pplogo_BLACK.png"/>
 
 <h1> Technologies Used</h1>
 
