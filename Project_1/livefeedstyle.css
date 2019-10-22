@@ -98,3 +98,37 @@ p {
   color: black;
   background-color: white;
 }
+
+@media screen and (max-width: 380px) {
+  img {
+    width: 90%;
+    height: auto;
+  }
+  nav {
+    width: 90%;
+    margin: 12px auto;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background: linear-gradient(grey, black);
+  }
+
+  li a {
+    display: block;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+  }
+}
