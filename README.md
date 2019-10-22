@@ -32,8 +32,10 @@
 <a href="https://flamboyant-bardeen-534681.netlify.com"> Pocket Porfolio Link </a>
 
 <h3>Sources Used</h3>
-- News Search Function<br/>
-<strong>Source:</strong> News API, <strong>Link:</strong> https://newsapi.org/
+- News Search Function: <strong>Source:</strong> News API, <strong>Link:</strong> https://newsapi.org/<br/>
+- Stock Ticker Widget: <strong>Source:</strong>Trading View, <strong>Link:</strong> https://www.tradingview.com/widget/<br/>
+- Live Stock Market Feed: <strong>Source:</strong>Trading View, <strong>Link:</strong> https://www.tradingview.com/widget/<br/>
+- General CSS Styling Information: <strong>Source:</strong>W3Schools,<strong>Link:</strong>https://www.w3schools.com/css/ <br/>
 
 
 
