@@ -1,7 +1,7 @@
 <img src="https://github.com/cperez150/pocketportfolio/blob/master/Project_1/images/pplogo_BLACK.png"/></img>
 
 <h1> Project Overview</h1>
-<p>Investment app for users 13+ to buy and sell stocks, research market news, and keep up to date with gloabl movements in the market.</p>
+<p>Investment app for users (age 13+) to buy and sell stocks, research market news, and keep up to date with gloabl movements in the market.</p>
 <ul>
  <li>Technologies Used</li>
 <li>User Story</li>
