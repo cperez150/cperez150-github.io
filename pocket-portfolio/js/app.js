@@ -303,8 +303,6 @@ $(() => {
     });
   });
 
-  // };
-
   //SELL STOCK CURRENT STOCK
   $(".portfolio").on("click", ".sell", event => {
     console.log($buyStockUserRemaining());
