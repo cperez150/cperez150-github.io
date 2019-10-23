@@ -49,7 +49,7 @@ If an investor has not inputed an amount to invest, an alert will appear on the 
 <a href="https://flamboyant-bardeen-534681.netlify.com"> Pocket Porfolio Link </a>
 
 <h3>APIs</h3>
-<p>APIs used to provide data and/or images for this application</p>
+<p>APIs used to provide data and/or images for this application:</p>
 <ul>
 <li><strong>Company Information and Stock Pricing:</strong></u> <strong>Source:</strong>Alpha Vantage API, <strong>Link: </strong> https://www.alphavantage.co/documentation/ </li><br/>
 <li><strong>Company Logos:</u></strong> <strong>Source:</strong> Clearbit, <strong>Link: </strong>https://clearbit.com/logo</li><br/>
@@ -58,12 +58,10 @@ If an investor has not inputed an amount to invest, an alert will appear on the 
 
 <h3>Other Resources Used</h3>
 <p>Below is a list of additional resources that were used to create this app:</p>
-- <u>Stock Ticker Widget:</u> <strong>Source:</strong>Trading View, <strong>Link: </strong> https://www.tradingview.com/widget/<br/>
-<p></p>
-- <u>Live Stock Market Feed:</u> <strong>Source:</strong>Trading View, <strong>Link: </strong> https://www.tradingview.com/widget/<br/>
-<p></p>
-- <u>General CSS Styling Information:</u> <strong>Source:</strong>W3Schools, <strong>Link:</strong>https://www.w3schools.com/css/ <br/>
-<p></p>
+<ul>
+<li>Stock Ticker Widget:<strong> Source:</strong>Trading View, <strong>Link: </strong> https://www.tradingview.com/widget/</li><br/>
+<li>Live Stock Market Feed:<strong> Source:</strong>Trading View, <strong>Link: </strong> https://www.tradingview.com/widget/</li><br/>
+<li>General CSS Styling Information:<strong> Source:</strong>W3Schools, <strong>Link:</strong>https://www.w3schools.com/css/ </li><br/>
 
 <h3>Images</h3>
 <img src="https://github.com/cperez150/cperez150.github.io/blob/master/pocket-portfolio/screenshots/All%20Devices.png"></img>
