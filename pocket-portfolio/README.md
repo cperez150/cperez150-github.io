@@ -12,7 +12,7 @@
 7.) If the investor would like to buy the stock, the investor can click "buy" under the stock price. <br/>
 8.) The stock will be added to the investor's portfolio, money will be deducted from the available balance, and a remaining balance will appear.<br/>
 
-
+<h2>Specs & App Details</h2>
 <ul>
  <li>Technologies Used</li>
 <li>User Story</li>
