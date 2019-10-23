@@ -49,19 +49,19 @@ If an investor has not inputed an amount to invest, an alert will appear on the 
 <a href="https://flamboyant-bardeen-534681.netlify.com"> Pocket Porfolio Link </a>
 
 <h3>APIs</h3>
-<p>APIs used to provide data and/or images for this application:</p>
+<p><strong>APIs used to provide data and/or images for this application:</strong></p>
 <ul>
-<li>Company Information and Stock Pricing:</u> <strong>Source:</strong>Alpha Vantage API, <strong>Link: </strong> https://www.alphavantage.co/documentation/ </li><br/>
-<li>Company Logos: <strong>Source:</strong> Clearbit, <strong>Link: </strong>https://clearbit.com/logo</li><br/>
-<li>News Search Function:<strong>Source:</strong> News API, <strong>Link: </strong> https://newsapi.org/</li><br/>
+<li>Company Information and Stock Pricing:</u> <strong>Source:</strong>Alpha Vantage API <strong>Link: </strong> https://www.alphavantage.co/documentation/ </li><br/>
+<li>Company Logos: <strong>Source:</strong> Clearbit <strong>Link: </strong>https://clearbit.com/logo</li><br/>
+<li>News Search Function:<strong>Source:</strong> News API <strong>Link: </strong> https://newsapi.org/</li><br/>
 </ul>
 
 <h3>Other Resources Used</h3>
-<p>Below is a list of additional resources that were used to create this app:</p>
+<p><strong>Below is a list of additional resources that were used to create this app:</strong></p>
 <ul>
-<li>Stock Ticker Widget:<strong> Source:</strong>Trading View, <strong>Link: </strong> https://www.tradingview.com/widget/</li><br/>
-<li>Live Stock Market Feed:<strong> Source:</strong>Trading View, <strong>Link: </strong> https://www.tradingview.com/widget/</li><br/>
-<li>General CSS Styling Information:<strong> Source:</strong>W3Schools, <strong>Link:</strong>https://www.w3schools.com/css/ </li><br/>
+<li>Stock Ticker Widget:<strong> Source:</strong>Trading View <strong>Link: </strong> https://www.tradingview.com/widget/</li><br/>
+<li>Live Stock Market Feed:<strong> Source:</strong>Trading View <strong>Link: </strong> https://www.tradingview.com/widget/</li><br/>
+<li>General CSS Styling Information:<strong> Source:</strong>W3Schools <strong>Link:</strong>https://www.w3schools.com/css/ </li><br/>
 
 <h3>Images</h3>
 <img src="https://github.com/cperez150/cperez150.github.io/blob/master/pocket-portfolio/screenshots/All%20Devices.png"></img>
