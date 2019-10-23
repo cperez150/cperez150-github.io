@@ -18,6 +18,7 @@
 <p></p>
 8.) The stock will be added to the investor's portfolio, money will be deducted from the available balance, and a remaining balance will appear.<br/>
 <p></p>
+9.) The investor can also sell a stock within their portfolio by simply clicking "sell" next to their holding until the quantity reaches 0.
 
 <h2>Specs & App Details</h2>
 <ul>
