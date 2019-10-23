@@ -49,11 +49,12 @@ If an investor has not inputed an amount to invest, an alert will appear on the 
 <a href="https://flamboyant-bardeen-534681.netlify.com"> Pocket Porfolio Link </a>
 
 <h3>APIs</h3>
--<u><strong>Company Information and Stock Pricing:</strong></u> <strong>Source:</strong>Alpha Vantage API, <strong>Link: </strong> https://www.alphavantage.co/documentation/ <br/>
+<p>APIs used to provide data and/or images for this application</p>
+*<strong>Company Information and Stock Pricing:</strong></u> <strong>Source:</strong>Alpha Vantage API, <strong>Link: </strong> https://www.alphavantage.co/documentation/ <br/>
 <p></p>
--<u><strong>Company Logos:</u></strong> <strong>Source:</strong> Clearbit, <strong>Link: </strong>https://clearbit.com/logo
+*<strong>Company Logos:</u></strong> <strong>Source:</strong> Clearbit, <strong>Link: </strong>https://clearbit.com/logo
 <p></p>
--<u><strong>News Search Function:</u></strong> <strong>Source:</strong> News API, <strong>Link: </strong> https://newsapi.org/<br/>
+*<strong>News Search Function:</u></strong> <strong>Source:</strong> News API, <strong>Link: </strong> https://newsapi.org/<br/>
 <p></p>
 
 <h3>Other Resources Used</h3>
