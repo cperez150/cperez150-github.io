@@ -21,13 +21,7 @@
 9.) The investor can also sell a stock within their portfolio by simply clicking "sell" next to their holding until the quantity reaches 0.
 
 <h2>Specs & App Details</h2>
-<ul>
- <li>Technologies Used</li>
-<li>User Story</li>
-<li>Site Link</li>
-<li>Sources Used</li>
-<li>Images</li>
-</ul>
+Various technologies were used to confirgure this application intended for mobile phone use. Pocket portifolio incorporates the use of a responsive design allowing investors to use the application on a majority of media applications including but not limited to iPhone X, Google Pixel, iPad Pro, etc. 
 
 <h3>Technologies Used</h3>
 <ul>
@@ -48,18 +42,22 @@
 - Market News<br/>
 - Search Company news <br />
 
+<h3>Error Handling</h3>
+If an investor has not inputed an amount to invest, an alert will appear on the screen informing the user that they do not have sufficient funds to purchase the respective stock. Additionally, a user will be alerted when they no longer own a stock to sell.
+
 <h3>Site Link</h3>
 <a href="https://flamboyant-bardeen-534681.netlify.com"> Pocket Porfolio Link </a>
 
 <h3>APIs</h3>
+-<u><strong>Company Information and Stock Pricing:</strong></u> <strong>Source:</strong>Alpha Vantage API, <strong>Link: </strong> https://www.alphavantage.co/documentation/ <br/>
+-<u><strong>Company Logos:</u></strong> <strong>Source:</strong> Clearbit, <strong>Link: </strong>https://clearbit.com/logo
+- <u><strong>News Search Function:</u></strong> <strong>Source:</strong> News API, <strong>Link: </strong> https://newsapi.org/<br/>
 
-<h3>Sources Used</h3>
-- <u>News Search Function:</u> <strong>Source:</strong> News API, <strong>Link: </strong> https://newsapi.org/<br/>
+<h3>Other Resources Used</h3>
 - <u>Stock Ticker Widget:</u> <strong>Source:</strong>Trading View, <strong>Link: </strong> https://www.tradingview.com/widget/<br/>
 - <u>Live Stock Market Feed:</u> <strong>Source:</strong>Trading View, <strong>Link: </strong> https://www.tradingview.com/widget/<br/>
 - <u>General CSS Styling Information:</u> <strong>Source:</strong>W3Schools, <strong>Link:</strong>https://www.w3schools.com/css/ <br/>
--<u> Company Information and Stock Pricing:</u> <strong>Source:</strong>Alpha Vantage API, <strong>Link: </strong> https://www.alphavantage.co/documentation/ <br/>
--<u>Company Logos:</u> <strong>Source:</strong> Clearbit, <strong>Link: </strong>https://clearbit.com/logo
+
 
 <h3>Images</h3>
 <img src="https://github.com/cperez150/cperez150.github.io/blob/master/pocket-portfolio/screenshots/All%20Devices.png"></img>
