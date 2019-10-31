@@ -4,7 +4,7 @@
 <p>Investment app for users (age 13+) to buy and sell stocks, research market news, and keep up to date with global movements in the market.</p>
 
 <h2>User Guide</h2>
-1.) Investor input's how much money ($0.00) the investor will have to invest.<br/>
+1.) User input's how much money ($0.00) they would like to invest.<br/>
 <p></p>
 2.) Click submit or press "return" on keyboard.<br/>
 <p></p>
