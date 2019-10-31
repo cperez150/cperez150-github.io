@@ -1,7 +1,7 @@
 <img src="https://github.com/cperez150/cperez150.github.io/blob/master/pocket-portfolio/images/pplogo_BLACK.png"/></img>
 
 <h2> Pocket Portfolio Overview</h2>
-<p>Investment app for users (age 13+) to buy and sell stocks, research market news, and keep up to date with gloabl movements in the market.</p>
+<p>Investment app for users (age 13+) to buy and sell stocks, research market news, and keep up to date with global movements in the market.</p>
 
 <h2>User Guide</h2>
 1.) Investor input's how much money ($0.00) the investor will have to invest.<br/>
@@ -47,6 +47,7 @@ If an investor has not inputed an amount to invest, an alert will appear on the 
 
 <h3>Site Link</h3>
 <a href="https://romantic-colden-058faf.netlify.com"> Pocket Porfolio Link </a>
+<p>Please note that the stock API used to build this app will only allow for 5 data request/clicks per minute</p>
 
 <h3>APIs</h3>
 <p><strong>APIs used to provide data and/or images for this application:</strong></p>
