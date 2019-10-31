@@ -46,7 +46,7 @@ Various technologies were used to confirgure this application intended for mobil
 If an investor has not inputed an amount to invest, an alert will appear on the screen informing the user that they do not have sufficient funds to purchase the respective stock. Additionally, a user will be alerted when they no longer own a stock to sell.
 
 <h3>Site Link</h3>
-<a href="https://flamboyant-bardeen-534681.netlify.com"> Pocket Porfolio Link </a>
+<a href="https://romantic-colden-058faf.netlify.com"> Pocket Porfolio Link </a>
 
 <h3>APIs</h3>
 <p><strong>APIs used to provide data and/or images for this application:</strong></p>
